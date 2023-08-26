@@ -1,0 +1,208 @@
+.login_container {
+  display: flex;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.login-form {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form .column {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
+flex-direction: column;
+margin-top: 50px;
+padding: 0 50px;
+}
+
+
+.login_column_img{
+    height: 100vh;
+    background-image: url('../../public/Images/login-bk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registration_column_img{
+  width: 35%;
+  height: 60vh;
+  background-image: url('/regist-bk.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* .login-form .column img {
+  max-width: 100%;
+  height: auto;
+} */
+
+
+
+.input-groups_title{
+    text-align: center;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+
+.login-form .column .input-groups {
+  width: 300px;
+margin-top: 20px;
+}
+
+.login-form .column .input-groups label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form .column .input-groups input[type="text"],
+.login-form .column .input-groups input[type="password"],
+.login-form .column .input-groups input[type="email"] {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.login-form .column .input-groups input[type="text"]:focus ,
+.login-form .column .input-groups input[type="password"]:focus ,
+.login-form .column .input-groups input[type="email"]:focus  {
+    border: 2px solid #49bbbd;
+    outline: none;
+}
+
+.login-form .column  .checkbox {
+  
+    margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.login-form .column  .icons {
+  width: 100%;
+    margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  font-size: 14px;
+}
+
+.login-form .column  .icons div{
+
+    width: 70px;
+    height: 70px;
+    border: 2px solid #49bbbd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding: 20px;
+
+
+}
+
+.login-form .column  .icons div img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-form .column .input-groups .checkbox label {
+  margin-left: 5px;
+}
+
+.login-form .column .input-groups .btn-login {
+  display: block;
+  width: 90%;
+  padding: 15px;
+  background-color: #49bbbd;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.login-form .column .input-groups .btn-login:hover {
+  background-color: #b9d2ec;
+}
+
+.login-form .column .input-groups .forgot-password {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-form .column .input-groups .signup-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-form a  {
+  color: #49bbbd;
+  text-decoration: none;
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .login-form {
+    flex-direction: column;
+  }
+
+  .login-form .column {
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* .login-form .column img {
+    margin-bottom: 20px;
+  } */
+
+  .login_column_img{
+    display: none;
+  }
+
+  .registration_column_img
+  {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .login-form .column {
+    padding: 10px;
+  }
+
+  .login-form .column .input-groups {
+    margin-bottom: 10px;
+    width: 100%;
+
+  }
+  .login-form .column  .icons div{
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+  }
+ 
+  .login-form .column  .checkbox {
+    flex-direction: column;
+
+  }
+}
+
+
+
+
+
